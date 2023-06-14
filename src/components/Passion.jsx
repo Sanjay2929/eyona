@@ -4,7 +4,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 const Passion = () => {
   return (
     <>
-      <section className="bg_red overflow-hidden py-lg-5">
+      <section className="bg_red overflow-hidden py-xl-5">
         <Container className="passionContainer py-5 my-lg-5 position-relative">
           <div className="py-xl-5 my-xxl-5"></div>
           <Row className="align-items-center py-5 position-relative z-2">
