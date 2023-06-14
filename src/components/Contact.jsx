@@ -66,7 +66,7 @@ const Contact = () => {
               </button>
             </Col>
           </Row>
-          <div className="py-5 my-md-5"></div>
+          <div className="py-sm-5 pb-5 my-md-5"></div>
         </Container>
       </section>
     </>

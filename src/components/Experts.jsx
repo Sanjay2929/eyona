@@ -11,8 +11,8 @@ import Globally from "../assets/img/svg/Globally.svg";
 const Experts = () => {
   return (
     <>
-      <section className="py-5">
-        <Container className="expertContainer py-5">
+      <section className="py-5 expertsCircle position-relative">
+        <Container className="expertContainer py-sm-5 position-relative z-2">
           <h3 className="ff_inter fw-bold fs_2xxl clr_black lh_115 mb-0">
             Eyona are
           </h3>

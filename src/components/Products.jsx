@@ -13,10 +13,11 @@ import Zoosh from "../assets/img/svg/zoosh.svg";
 import ZooshImg from "../assets/img/webp/ZooshImg.webp";
 import arivuImg from "../assets/img/webp/arivu.webp";
 import bgEasyhr from "../assets/img/webp/cardEasyhrbg.webp";
+import coldDrink from "../assets/img/webp/drinkGlass.webp";
 const Products = () => {
   return (
     <>
-      <section className="py-5">
+      <section className="py-sm-5">
         <Container className="py-5 productsContainer">
           <h3 className="ff_inter fw-bold fs_8x5l clr_brownBlack text-center pb-4 mb-0">
             Our products.
@@ -27,9 +28,9 @@ const Products = () => {
             and scale.
           </p>
           <Row>
-            <Col lg={6} className="px-4 py-5">
-              <div className="trueData br_25 overflow-hidden h-100 d-flex flex-column justify-content-between">
-                <div className="productData">
+            <Col lg={6} className="px-4 py-md-5 pt-sm-4 py-2 ">
+              <div className="trueData br_25 overflow-hidden h-100 d-flex flex-column justify-content-between position-relative">
+                <div className="productData position-relative z-2">
                   <img src={trueData} alt="img" />
                   <h3 className="pt-4 mt-3 mb-3 pb-1 ff_inter fw-bold fs_3xl lh_190 clr_brownBlack letterN1">
                     Data Unifying & Analytics Platform
@@ -43,7 +44,7 @@ const Products = () => {
                 <img className="w-100" src={trueDataImg} alt="img" />
               </div>
             </Col>
-            <Col lg={6} className="px-4 py-5">
+            <Col lg={6} className="px-4 py-md-5 pt-sm-4 py-2 ">
               <div className="repforce br_25 overflow-hidden h-100 d-flex flex-column justify-content-between">
                 <div className="productData position-relative z-2">
                   <img src={repforce} alt="img" />
@@ -63,7 +64,7 @@ const Products = () => {
                 />
               </div>
             </Col>
-            <Col lg={6} className="px-4 py-5">
+            <Col lg={6} className="px-4 py-md-5 pt-sm-4 py-2 ">
               <div className="assetforce br_25 overflow-hidden h-100 d-flex flex-column justify-content-between">
                 <div className="productData position-relative z-2">
                   <img src={assetforce} alt="img" />
@@ -83,7 +84,7 @@ const Products = () => {
                 />
               </div>
             </Col>
-            <Col lg={6} className="px-4 py-5">
+            <Col lg={6} className="px-4 py-md-5 pt-sm-4 py-2 ">
               <div className="easyHr br_25 overflow-hidden h-100 d-flex flex-column justify-content-between position-relative easyhrBgImg">
                 <div className="productData position-relative z-2">
                   <img src={easyHr} alt="img" />
@@ -101,11 +102,16 @@ const Products = () => {
                   src={easyHrImg}
                   alt="img"
                 />
-                <img style={{maxWidth:"122px"}} className="position-absolute end-0 top_20 z-0" src={bgEasyhr} alt="img" />
+                <img
+                  style={{ maxWidth: "122px" }}
+                  className="position-absolute end-0 top_20 z-0"
+                  src={bgEasyhr}
+                  alt="img"
+                />
               </div>
             </Col>
-            <Col lg={6} className="px-4 py-5">
-              <div className="Zoosh br_25 overflow-hidden h-100 d-flex flex-column justify-content-between">
+            <Col lg={6} className="px-4 py-md-5 pt-sm-4 py-2 ">
+              <div className="Zoosh br_25 overflow-hidden h-100 d-flex flex-column justify-content-between position-relative z-2">
                 <div className="productData position-relative z-2">
                   <img src={Zoosh} alt="img" />
                   <h3 className="pt-4 mt-3 mb-3 pb-1 ff_inter fw-bold lh_190 fs_3xl clr_brownBlack letterN1">
@@ -122,9 +128,15 @@ const Products = () => {
                   src={ZooshImg}
                   alt="img"
                 />
+                <img
+                  style={{ maxWidth: "149px" }}
+                  className="position-absolute end-0 top-0 z-0"
+                  src={coldDrink}
+                  alt="img"
+                />
               </div>
             </Col>
-            <Col lg={6} className="px-4 py-5">
+            <Col lg={6} className="px-4 py-md-5 pt-sm-4 py-2 ">
               <div className="arivu br_25 overflow-hidden h-100 d-flex flex-column justify-content-between">
                 <div className="productData position-relative z-2">
                   <img src={arivu} alt="img" />

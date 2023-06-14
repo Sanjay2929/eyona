@@ -17,8 +17,8 @@ import campariGroup from "../assets/img/svg/campariGroup.svg";
 const Relationship = () => {
   return (
     <>
-      <section className="pt-4 pb-5">
-        <Container className="relationShipContainer pb-5 mb-5">
+      <section className="pt-sm-4 pt-5 pb-5">
+        <Container className="relationShipContainer pb-sm-5 mb-sm-5">
           <h3 className="maxW1048 mx-auto ff_inter fw-bold fs_8x5l clr_brownBlack text-center lh_115 mb-3">
             We’ve built relationships based on
             <span className="clr_red">trust.</span>
@@ -29,9 +29,9 @@ const Relationship = () => {
             businesses big or small.
           </p>
           <div className="bg_map py-lg-5 mt-xl-5">
-            <Row className="align-items-center justify-content-between py-md-5 my-lg-5">
+            <Row className="align-items-center justify-content-between py-md-5 py-4 my-lg-5">
               <Col xs={12} className="pt-md-5">
-                <Row className="align-items-center justify-content-between py-4">
+                <Row className="align-items-center justify-content-between py-md-4">
                   <Col
                     lg={2}
                     sm={3}
@@ -87,7 +87,7 @@ const Relationship = () => {
                 </Row>
               </Col>
               <Col xs={12}>
-                <Row className="align-items-center justify-content-between py-4">
+                <Row className="align-items-center justify-content-between py-md-4">
                   <Col
                     lg={2}
                     sm={3}
@@ -143,7 +143,7 @@ const Relationship = () => {
                 </Row>
               </Col>
               <Col xs={12} className="pb-md-5">
-                <Row className="align-items-center justify-content-between py-4">
+                <Row className="align-items-center justify-content-between py-md-4">
                   <Col
                     lg={2}
                     sm={3}
@@ -211,7 +211,7 @@ const Relationship = () => {
             </Row>
           </div>
           <div
-            className="mx-auto companyDetail d-flex justify-content-between align-items-center bg_red px_75_72 py-2 br_25 px-3 mb-4"
+            className="mx-auto companyDetail d-flex justify-content-between align-items-center bg_red px_75_72 py-2 br_25 px-3 mb-sm-4"
             style={{ maxWidth: "670px" }}
           >
             <div className="pt-1 pb-4">
