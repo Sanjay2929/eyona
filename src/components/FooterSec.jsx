@@ -11,15 +11,15 @@ const FooterSec = () => {
           <Row className=" justify-content-between pt-sm-5 pt-2 pb-4 mb-3 mt-2">
             <Col xxl={3} lg={4} sm={8}>
               <a
-                className="ff_inter fw-bold fs_3x5l clr_red pb-4 mb-0"
+                className="ff_inter fw-bold fs_3x5l clr_red pb-4 mb-0 "
                 href="#"
               >
                 contact@eyona.co
               </a>
-              <p className=" ff_inter fw-normal fs_md clr_EF lh_170 pt-1 mb-0">
+              <p className=" ff_inter fw-normal fs_md clr_EF lh_170 pt-1 mb-0 cursiorPointer">
                 Terms & Conditions{" "}
               </p>
-              <p className=" ff_inter fw-normal fs_md clr_EF lh_170 mb-0">
+              <p className=" ff_inter fw-normal fs_md clr_EF lh_170 mb-0 cursiorPointer">
                 Privacy Policy
               </p>
             </Col>
@@ -45,6 +45,7 @@ const FooterSec = () => {
             </Col>
           </Row>
           <svg
+            className="in"
             width="29"
             height="30"
             viewBox="0 0 29 30"

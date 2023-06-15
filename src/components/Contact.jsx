@@ -13,7 +13,9 @@ const Contact = () => {
                 <h3 className="ff-inter fw-bold position-relative z-1 fs_7x5l clr_white mb-2">
                   Let’s Talk
                 </h3>
-                <h4 className='position-absolute z-0 top-50 ff_inter fw-bold fs_2xxl contactBg'>Contact</h4>
+                <h4 className="position-absolute z-0 top-50 ff_inter fw-bold fs_2xxl contactBg">
+                  Contact
+                </h4>
               </div>
               <p className="ff_inter fw-normal fs_xl lh_200 clr_fadeWhite pt-5">
                 We would love to hear from you. Fill out the form or contact us
@@ -26,6 +28,7 @@ const Contact = () => {
                 contact@eyona.co
               </a>
               <svg
+                className='in'
                 width="29"
                 height="29"
                 viewBox="0 0 29 29"
@@ -44,24 +47,24 @@ const Contact = () => {
                 />
               </svg>
             </Col>
-            <Col lg={5} className='position-relative z-2 pt-lg-0 pt-3'>
+            <Col lg={5} className="position-relative z-2 pt-lg-0 pt-3">
               <input
-                className="w-100 border-0 bg-transparent borderbottomInputs p-3 mb-4"
+                className="w-100 border-0 bg-transparent borderbottomInputs ff_inter fw-normal fs_md clr_fadeWhite p-3 mb-4"
                 type="text"
                 name="Your Name"
                 placeholder="Your Name"
               />
               <input
-                className="w-100 border-0 bg-transparent borderbottomInputs p-3 mb-4"
+                className="w-100 border-0 bg-transparent borderbottomInputs  ff_inter fw-normal fs_md clr_fadeWhite p-3 mb-4"
                 type="text"
                 placeholder="Your Email"
               />
               <textarea
-                className="w-100 border-0 bg-transparent borderbottomInputs p-3 mt-2 mb-3"
+                className="w-100 border-0 bg-transparent borderbottomInputs  ff_inter fw-normal fs_md clr_fadeWhite p-3 mt-2 mb-3"
                 placeholder="What would you like to know?"
                 rows="4"
               ></textarea>
-              <button className="bg_red rounded-pill messageBtn py-3 px_29_22 border-0 ff_montserrat fw-bold fs_lg clr_white letter10 lh_115 mt-4">
+              <button className="bg_red rounded-pill btnHover messageBtn py-3 px_29_22 border-0 ff_montserrat fw-bold fs_lg clr_white letter10 lh_115 mt-4">
                 Send Message
               </button>
             </Col>

@@ -10,10 +10,12 @@ import Magic from "./components/Magic";
 import ManagementTeam from "./components/ManagementTeam";
 import JoinTeam from "./components/JoinTeam";
 import FooterSec from "./components/FooterSec";
+import Preloader from "./components/Preloader";
 
 function App() {
   return (
-    <div className="">
+    <div className="overflow-hidden">
+      <Preloader />
       <HeroSection />
       <Passion />
       <Experts />

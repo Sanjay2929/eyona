@@ -27,7 +27,7 @@ const JoinTeam = () => {
               standards that loves to create and build things with exceptional
               people, then Eyona may be the fit for you.
             </p>
-            <button className="bg_red rounded-pill messageBtn py-3 px_30_18 border-0 ff_montserrat fw-bold fs_lg clr_white letter10 lh_115 mt-4">
+            <button className="bg_red btnHover rounded-pill messageBtn py-3 px_30_18 border-0 ff_montserrat fw-bold fs_lg clr_white letter10 lh_115 mt-4">
               Send Us A Message
             </button>
           </div>

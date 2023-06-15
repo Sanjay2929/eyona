@@ -15,13 +15,13 @@ const HeroSection = () => {
     setfirst(!first);
   }
   if (!first) {
-    document.body.classList.add("overflow_hidden");
+    document.getElementById("overFlow_nav").classList.add("overflow-hidden");
   } else {
-    document.body.classList.remove("overflow_hidden");
+   document.getElementById("overFlow_nav").classList.remove("overflow-hidden");
   }
   return (
     <>
-      <section className="pb-5 d-flex min_vh_xl_100 flex-column heroSection position-relative overflow-hidden">
+      <section className="pb-5 d-flex min_vh_xl_100 flex-column heroSection position-relative overflow-hidden z_100">
         <Container className="HeroContainer py-1 position-relative z-2">
           <div className="d-flex justify-content-between align-items-center position-absolute z_100 top-0 pt-5 w-100 pe-4 bg_xs_white">
             <img className="maxW149 " src={heroNavLogo} alt="logo" />
@@ -78,7 +78,7 @@ const HeroSection = () => {
                 Eyona is a team of dedicated, passionate people building B2B
                 software for the FMCG industry.
               </p>
-              <button className="bg_red rounded-pill messageBtn py-3 px_31_34 border-0 ff_montserrat fw-bold fs_lg clr_white letter10 lh_115 mt-3">
+              <button className="bg_red rounded-pill btnHover py-3 px_31_34 border-0 ff_montserrat fw-bold fs_lg clr_white letter10 lh_115 mt-3">
                 Get In Touch
               </button>
             </Col>
