@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Preloader = () => {
-       document.body.classList.add("overflow_hidden");
-       setTimeout(() => {
-         document.getElementById("none").style.display = "none";
-         document.body.classList.remove("overflow_hidden");
-       }, 2500);
+  document.getElementById("overFlow_nav").classList.add("overflow_hidden");
+  setTimeout(() => {
+    document.getElementById("none").style.display = "none";
+    document.getElementById("overFlow_nav").classList.remove("overflow_hidden");
+  }, 3000);
   return (
     <>
       <section
@@ -23,6 +23,6 @@ const Preloader = () => {
       </section>
     </>
   );
-}
+};
 
-export default Preloader
+export default Preloader;

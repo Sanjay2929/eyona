@@ -1,34 +1,43 @@
-import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
+import React, { useState } from "react";
+import { Col, Container, Row } from "react-bootstrap";
+import ThankYou from "./ThankYou";
 
 const Contact = () => {
+   const [first, setfirst] = useState(true);
+  setTimeout(() => {
+    setfirst(true);
+  }, 3000); 
   return (
     <>
-      <section className="bg_brownBlack py-sm-5">
-        <Container className="contactContainer py-sm-5 my-lg-5">
-          <div className="py-5 my-md-5"></div>
+      <section id="contact" className="bg_brownBlack py-5 position-relative">
+        <Container className="contactContainer py-xl-5 my-lg-5">
+          <div className="py-lg-5 my-md-5"></div>
           <Row className="align-items-center justify-content-between">
             <Col xl={4} lg={6}>
               <div className="position-relative">
                 <h3 className="ff-inter fw-bold position-relative z-1 fs_7x5l clr_white mb-2">
                   Let’s Talk
                 </h3>
-                <h4 className="position-absolute z-0 top-50 ff_inter fw-bold fs_2xxl contactBg">
+                <h4 className="position-absolute z-0 top-50 ff_libre fw-bold fs_2xxl contactBg">
                   Contact
                 </h4>
               </div>
-              <p className="ff_inter fw-normal fs_xl lh_200 clr_fadeWhite pt-5">
+              <p
+                className="ff_inter fw-normal fs_xl lh_200 clr_fadeWhite pt-5"
+                data-aos="fade-right"
+              >
                 We would love to hear from you. Fill out the form or contact us
                 sending an email to.
               </p>
               <a
                 className="ff_inter fw-bold fs_2x5l clr_red d-block pb-lg-3 mb-3"
+                data-aos="fade-right"
                 href="contact@eyona.co"
               >
                 contact@eyona.co
               </a>
               <svg
-                className='in'
+                className="in"
                 width="29"
                 height="29"
                 viewBox="0 0 29 29"
@@ -64,16 +73,28 @@ const Contact = () => {
                 placeholder="What would you like to know?"
                 rows="4"
               ></textarea>
-              <button className="bg_red rounded-pill btnHover messageBtn py-3 px_29_22 border-0 ff_montserrat fw-bold fs_lg clr_white letter10 lh_115 mt-4">
+              <button
+                onClick={() => setfirst(false)}
+                className="bg_red rounded-pill btnHover messageBtn py-3 px_29_22 border-0 ff_montserrat fw-bold fs_lg clr_white letter10 lh_115 mt-4"
+              >
                 Send Message
               </button>
             </Col>
           </Row>
-          <div className="py-sm-5 pb-5 my-md-5"></div>
+          <div className="py-lg-5 pb-md-5 my-lg-5"></div>
         </Container>
+        <div
+          className={
+            first
+              ? "position-absolute top-50 translate-middle-y start-100 z-3 w-100 h-100 bg_brownBlack pt-5"
+              : "position-absolute top-50 translate-middle-y start-0 z-3 w-100 h-100 bg_brownBlack pt-5"
+          }
+        >
+          <ThankYou />
+        </div>
       </section>
     </>
   );
-}
+};
 
-export default Contact
+export default Contact;

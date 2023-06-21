@@ -19,17 +19,29 @@ const Products = () => {
     <>
       <section className="py-sm-5">
         <Container className="py-5 productsContainer">
-          <h3 className="ff_inter fw-bold fs_8x5l clr_brownBlack text-center pb-4 mb-0">
+          <h3
+            className="ff_inter fw-bold fs_8x5l clr_brownBlack text-center pb-4 mb-0"
+            data-aos="fade-left"
+            data-aos-delay="600"
+          >
             Our products.
           </h3>
-          <p className="maxW872 mx-auto ff_inter fw-normal fs_xl lh_200 clr_gray text-center pb-5">
+          <p
+            className="maxW872 mx-auto ff_inter fw-normal fs_xl lh_200 clr_gray text-center pb-xl-5"
+            data-aos="fade-right"
+            data-aos-delay="600"
+          >
             We exclusively create and build B2B software. This specialization
             has helped us build unmatched deep domain expertise for global fit
             and scale.
           </p>
           <Row>
             <Col lg={6} className="px-4 py-md-5 pt-sm-4 py-2 ">
-              <div className="trueData cursiorPointer porductCards br_25 overflow-hidden h-100 d-flex flex-column justify-content-between position-relative">
+              <div
+                className="trueData cursiorPointer porductCards br_25 overflow-hidden h-100 d-flex flex-column justify-content-between position-relative"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+              >
                 <div className="productData position-relative z-2">
                   <img src={trueData} alt="img" />
                   <h3 className="pt-4 mt-3 mb-3 pb-1 ff_inter fw-bold fs_3xl lh_190 clr_brownBlack letterN1">
@@ -45,7 +57,11 @@ const Products = () => {
               </div>
             </Col>
             <Col lg={6} className="px-4 py-md-5 pt-sm-4 py-2 ">
-              <div className="repforce cursiorPointer porductCards br_25 overflow-hidden h-100 d-flex flex-column justify-content-between">
+              <div
+                className="repforce cursiorPointer porductCards br_25 overflow-hidden h-100 d-flex flex-column justify-content-between"
+                data-aos="zoom-in"
+                data-aos-delay="400"
+              >
                 <div className="productData position-relative z-2">
                   <img src={repforce} alt="img" />
                   <h3 className="pt-4 mt-3 mb-3 pb-1 ff_inter fw-bold fs_3xl lh_190 clr_brownBlack letterN1">
@@ -58,14 +74,18 @@ const Products = () => {
                   </p>
                 </div>
                 <img
-                  className="w-100 mt_N172 mt_N226 mt_N80 position-relative z-0"
+                  className="w-100 mt_N172 mt_N226 mt_N72 position-relative z-0"
                   src={repforceImg}
                   alt="img"
                 />
               </div>
             </Col>
             <Col lg={6} className="px-4 py-md-5 pt-sm-4 py-2 ">
-              <div className="assetforce cursiorPointer porductCards br_25 overflow-hidden h-100 d-flex flex-column justify-content-between">
+              <div
+                className="assetforce cursiorPointer porductCards br_25 overflow-hidden h-100 d-flex flex-column justify-content-between"
+                data-aos="zoom-in"
+                data-aos-delay="600"
+              >
                 <div className="productData position-relative z-2">
                   <img src={assetforce} alt="img" />
                   <h3 className="pt-4 mt-3 mb-3 pb-1 ff_inter fw-bold fs_3xl lh_190 clr_brownBlack letterN1">
@@ -78,14 +98,18 @@ const Products = () => {
                   </p>
                 </div>
                 <img
-                  className="w-100 mt_N140 mt_N190 mt_N80 position-relative z-0"
+                  className="w-100 mt_N140 mt_N190 mt_N72 position-relative z-0"
                   src={assetforceImg}
                   alt="img"
                 />
               </div>
             </Col>
             <Col lg={6} className="px-4 py-md-5 pt-sm-4 py-2 ">
-              <div className="easyHr cursiorPointer porductCards br_25 overflow-hidden h-100 d-flex flex-column justify-content-between position-relative easyhrBgImg">
+              <div
+                className="easyHr cursiorPointer porductCards br_25 overflow-hidden h-100 d-flex flex-column justify-content-between position-relative easyhrBgImg"
+                data-aos="zoom-in"
+                data-aos-delay="800"
+              >
                 <div className="productData position-relative z-2">
                   <img src={easyHr} alt="img" />
                   <h3 className="pt-4 mt-3 mb-3 pb-1 ff_inter fw-bold fs_3xl lh_190 clr_brownBlack letterN1">
@@ -98,7 +122,7 @@ const Products = () => {
                   </p>
                 </div>
                 <img
-                  className="w-100 mt_N140 mt_N190 mt_N80 position-relative z-0"
+                  className="w-100 mt_N140 mt_N190 mt_N72 position-relative z-0"
                   src={easyHrImg}
                   alt="img"
                 />
@@ -111,7 +135,11 @@ const Products = () => {
               </div>
             </Col>
             <Col lg={6} className="px-4 py-md-5 pt-sm-4 py-2 ">
-              <div className="Zoosh cursiorPointer porductCards br_25 overflow-hidden h-100 d-flex flex-column justify-content-between position-relative z-2">
+              <div
+                className="Zoosh cursiorPointer porductCards br_25 overflow-hidden h-100 d-flex flex-column justify-content-between position-relative z-2"
+                data-aos="zoom-in"
+                data-aos-delay="1000"
+              >
                 <div className="productData position-relative z-2">
                   <img src={Zoosh} alt="img" />
                   <h3 className="pt-4 mt-3 mb-3 pb-1 ff_inter fw-bold lh_190 fs_3xl clr_brownBlack letterN1">
@@ -137,7 +165,11 @@ const Products = () => {
               </div>
             </Col>
             <Col lg={6} className="px-4 py-md-5 pt-sm-4 py-2 ">
-              <div className="arivu cursiorPointer porductCards br_25 overflow-hidden h-100 d-flex flex-column justify-content-between">
+              <div
+                className="arivu cursiorPointer porductCards br_25 overflow-hidden h-100 d-flex flex-column justify-content-between"
+                data-aos="zoom-in"
+                data-aos-delay="1200"
+              >
                 <div className="productData position-relative z-2">
                   <img src={arivu} alt="img" />
                   <h3 className="pt-4 mt-3 mb-3 pb-1 ff_inter fw-bold lh_190 fs_3xl clr_brownBlack letterN1">
@@ -150,7 +182,7 @@ const Products = () => {
                   </p>
                 </div>
                 <img
-                  className="w-100 mt_N172 mt_N80 mt_N226 position-relative z-0"
+                  className="w-100 mt_N172 mt_N72 mt_N226 position-relative z-0"
                   src={arivuImg}
                   alt="img"
                 />

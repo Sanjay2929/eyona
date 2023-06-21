@@ -7,7 +7,7 @@ const FooterSec = () => {
     <>
       <section className="bg_brownBlack py-sm-5 footerCircle position-relative overflow-hidden">
         <Container className="footerContainer py-5 mt-md-5 mb-md-4 position-relative z-2">
-          <img className="mt-sm-5" src={footerLogo} alt="logo" />
+          <img className="mt-sm-5 cursiorPointer footerLogo" src={footerLogo} alt="logo" />
           <Row className=" justify-content-between pt-sm-5 pt-2 pb-4 mb-3 mt-2">
             <Col xxl={3} lg={4} sm={8}>
               <a
@@ -17,29 +17,29 @@ const FooterSec = () => {
                 contact@eyona.co
               </a>
               <p className=" ff_inter fw-normal fs_md clr_EF lh_170 pt-1 mb-0 cursiorPointer">
-                Terms & Conditions{" "}
+                Terms & Conditions
               </p>
               <p className=" ff_inter fw-normal fs_md clr_EF lh_170 mb-0 cursiorPointer">
                 Privacy Policy
               </p>
             </Col>
             <Col xxl={2} lg={3} sm={5} className="pt-lg-2 pt-4">
-              <h3 className="ff_inter fw-bold fs_3x5l clr_white pb-3 mb-0">
+              <h3 className="ff_inter fw-bold fs_3x5l clr_white pb-3 mb-0 cursiorPointer">
                 London
               </h3>
-              <a className=" ff_inter fw-normal fs_md clr_EF lh_170" href="#">
-                77 Farringdon Roadspan{" "}
+              <a className=" ff_inter fw-normal fs_md clr_EF lh_170 cursiorPointer" href="#">
+                77 Farringdon Roadspan
                 <span className="d-block l_h170"> London</span>
                 EC1m 3JU
               </a>
             </Col>
             <Col xxl={2} lg={3} sm={5} className="pt-lg-2 pt-4">
-              <h3 className="ff_inter fw-bold fs_3x5l clr_white pb-3 mb-0">
+              <h3 className="ff_inter fw-bold fs_3x5l clr_white pb-3 mb-0 cursiorPointer">
                 Cape Town
               </h3>
               <a className=" ff_inter fw-normal fs_md clr_EF lh_170" href="#">
-                4 Alphons way,{" "}
-                <span className="d-block l_h170">Tokai, Cape Town,</span>{" "}
+                4 Alphons way,
+                <span className="d-block l_h170">Tokai, Cape Town,</span>
                 Western Cape 7420, ZA
               </a>
             </Col>

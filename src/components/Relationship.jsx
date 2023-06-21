@@ -18,7 +18,7 @@ const Relationship = () => {
   return (
     <>
       <section className="pt-sm-4 pt-5 pb-5">
-        <Container className="relationShipContainer pb-sm-5 mb-sm-5">
+        <Container className="relationShipContainer pb-lg-5 mb-sm-5">
           <h3 className="maxW1048 mx-auto ff_inter fw-bold fs_8x5l clr_brownBlack text-center lh_115 mb-3">
             We’ve built relationships based on
             <span className="clr_red">trust.</span>
@@ -29,14 +29,16 @@ const Relationship = () => {
             businesses big or small.
           </p>
           <div className="bg_map py-lg-5 mt-xl-5">
-            <Row className="align-items-center justify-content-between py-md-5 py-4 my-lg-5">
+            <Row className="align-items-center justify-content-between py-lg-5 py-4 my-lg-5">
               <Col xs={12} className="pt-md-5">
-                <Row className="align-items-center justify-content-between py-md-4">
+                <Row className="align-items-center justify-content-sm-between justify-content-evenly py-md-4">
                   <Col
                     lg={2}
                     sm={3}
-                    xs={6}
+                    xs={5}
                     className="d-flex justify-content-center py-sm-0 py-3"
+                    data-aos="zoom-in"
+                    data-aos-delay="200"
                   >
                     <img
                       className="w-100"
@@ -48,8 +50,10 @@ const Relationship = () => {
                   <Col
                     lg={2}
                     sm={3}
-                    xs={6}
+                    xs={5}
                     className="d-flex justify-content-center py-sm-0 py-3"
+                    data-aos="zoom-in"
+                    data-aos-delay="400"
                   >
                     <img
                       className="w-100"
@@ -61,8 +65,10 @@ const Relationship = () => {
                   <Col
                     lg={2}
                     sm={3}
-                    xs={6}
+                    xs={5}
                     className="d-flex justify-content-center py-sm-0 py-3"
+                    data-aos="zoom-in"
+                    data-aos-delay="600"
                   >
                     <img
                       className="w-100"
@@ -74,8 +80,10 @@ const Relationship = () => {
                   <Col
                     lg={2}
                     sm={3}
-                    xs={6}
+                    xs={5}
                     className="d-flex justify-content-center py-sm-0 py-3"
+                    data-aos="zoom-in"
+                    data-aos-delay="800"
                   >
                     <img
                       className="w-100"
@@ -87,12 +95,14 @@ const Relationship = () => {
                 </Row>
               </Col>
               <Col xs={12}>
-                <Row className="align-items-center justify-content-between py-md-4">
+                <Row className="align-items-center justify-content-sm-between justify-content-evenly py-md-4">
                   <Col
                     lg={2}
                     sm={3}
-                    xs={6}
+                    xs={5}
                     className="d-flex justify-content-center py-sm-0 py-3"
+                    data-aos="zoom-in"
+                    data-aos-delay="1000"
                   >
                     <img
                       className="w-100"
@@ -104,8 +114,10 @@ const Relationship = () => {
                   <Col
                     lg={2}
                     sm={3}
-                    xs={6}
+                    xs={5}
                     className="d-flex justify-content-center py-sm-0 py-3"
+                    data-aos="zoom-in"
+                    data-aos-delay="1200"
                   >
                     <img
                       className="w-100"
@@ -117,8 +129,10 @@ const Relationship = () => {
                   <Col
                     lg={2}
                     sm={3}
-                    xs={6}
+                    xs={5}
                     className="d-flex justify-content-center py-sm-0 py-3"
+                    data-aos="zoom-in"
+                    data-aos-delay="1400"
                   >
                     <img
                       className="w-100"
@@ -130,8 +144,10 @@ const Relationship = () => {
                   <Col
                     lg={2}
                     sm={3}
-                    xs={6}
+                    xs={5}
                     className="d-flex justify-content-center py-sm-0 py-3"
+                    data-aos="zoom-in"
+                    data-aos-delay="1600"
                   >
                     <img
                       className="w-100"
@@ -143,12 +159,14 @@ const Relationship = () => {
                 </Row>
               </Col>
               <Col xs={12} className="pb-md-5">
-                <Row className="align-items-center justify-content-between py-md-4">
+                <Row className="align-items-center justify-content-sm-between justify-content-evenly py-md-4">
                   <Col
                     lg={2}
                     sm={3}
-                    xs={6}
+                    xs={5}
                     className="d-flex justify-content-center py-sm-0 py-3"
+                    data-aos="zoom-in"
+                    data-aos-delay="1800"
                   >
                     <img
                       className="w-100"
@@ -159,8 +177,10 @@ const Relationship = () => {
                   </Col>
                   <Col
                     sm={2}
-                    xs={6}
+                    xs={5}
                     className="d-flex justify-content-center py-sm-0 py-3"
+                    data-aos="zoom-in"
+                    data-aos-delay="2000"
                   >
                     <img
                       className="w-100"
@@ -171,8 +191,10 @@ const Relationship = () => {
                   </Col>
                   <Col
                     sm={2}
-                    xs={6}
+                    xs={5}
                     className="d-flex justify-content-center py-sm-0 py-3"
+                    data-aos="zoom-in"
+                    data-aos-delay="2200"
                   >
                     <img
                       className="w-100"
@@ -183,8 +205,10 @@ const Relationship = () => {
                   </Col>
                   <Col
                     sm={2}
-                    xs={6}
+                    xs={5}
                     className="d-flex justify-content-center py-sm-0 py-3"
+                    data-aos="zoom-in"
+                    data-aos-delay="2400"
                   >
                     <img
                       className="w-100"
@@ -196,8 +220,10 @@ const Relationship = () => {
                   <Col
                     lg={2}
                     sm={3}
-                    xs={6}
+                    xs={5}
                     className="d-flex justify-content-center py-sm-0 py-3"
+                    data-aos="zoom-in"
+                    data-aos-delay="2600"
                   >
                     <img
                       className="w-100"
@@ -213,6 +239,8 @@ const Relationship = () => {
           <div
             className="mx-auto companyDetail d-flex justify-content-between align-items-center bg_red px_75_72 py-2 br_25 px-3 mb-sm-4"
             style={{ maxWidth: "670px" }}
+            data-aos="flip-up"
+            data-aos-delay="600"
           >
             <div className="pt-1 pb-4">
               <h4 className="text-center ff_inter fw-semibold fs_5xl clr_white mb-0">

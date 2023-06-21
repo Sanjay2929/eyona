@@ -7,23 +7,35 @@ const NavigationBar = () => {
     <>
       <div className=" overflow-auto">
         <section className="bg_brownBlack vh-100 d-flex flex-column pt-5 bg_circleNav position-relative overflow-x-hidden">
-          <div className="d-flex HeroContainer justify-content-between px-5 mx-2 position-relative z-2">
+          <div className="d-flex HeroContainer justify-content-between px-5 mx-2 position-relative z-2 cursiorPointer">
             <img className="maxW133" src={logoWhite} alt="logo" />
           </div>
           <Container className="NavContainer d-flex flex-column justify-content-center flex-grow-1 position-relative z-2 py-5">
             <Row className="justify-content-between align-items-lg-end align-items-start">
               <Col lg={6} xl={5} md={7} className="pb-md-5">
                 <ul className="Navul mb-0 ps-0 pb-5">
-                  <li>Who we are</li>
-                  <li>Our Companies</li>
-                  <li>What we do</li>
-                  <li>Contact us</li>
-                  <li>Careers</li>
+                  <li>
+                    <a href="#who">
+                      Who we are
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">Our Companies</a>
+                  </li>
+                  <li>
+                    <a href="#">What we do</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact us</a>
+                  </li>
+                  <li>
+                    <a href="#">Careers</a>
+                  </li>
                 </ul>
               </Col>
               <Col xxl={4} md={5}>
                 <Row className="justify-content-between">
-                  <Col md={12} className="pb-3">
+                  <Col md={12} className="pb-3 policies">
                     <a
                       className="ff_montserrat fw-bold fs_2x5l clr_red pb-2 mb-1"
                       href="contact@eyona.co"
@@ -52,7 +64,7 @@ const NavigationBar = () => {
                     <h4 className="ff_montserrat fw-bold fs_2x5l clr_red pb-3 mb-1">
                       London
                     </h4>
-                    <p className="ff_montserrat fw-normal fs_md clr_white ps-0 cursiorPointer lh_170">
+                    <p className="ff_montserrat fw-normal fs_md clr_white ps-0 cursiorPointer lh_170 address">
                       77 Farringdon <span className="d-block">Road</span>
                       <span className="d-block">London</span>
                       <span className="d-block">EC1m 3JU</span>
@@ -62,7 +74,7 @@ const NavigationBar = () => {
                     <h4 className="ff_montserrat fw-bold fs_2x5l clr_red pb-3 mb-1">
                       Cape Town
                     </h4>
-                    <p className="ff_montserrat fw-normal fs_md clr_white ps-0 pb-3 mb-3 cursiorPointer lh_170">
+                    <p className="ff_montserrat fw-normal fs_md clr_white ps-0 pb-3 mb-3 cursiorPointer lh_170 address">
                       4 Alphons way,
                       <span className="d-block">Tokai, Cape Town,</span>
                       <span className="d-block"> Western Cape 7420,</span>

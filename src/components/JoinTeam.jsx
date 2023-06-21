@@ -4,7 +4,7 @@ import peopleImg from "../assets/img/webp/peopleimg.webp";
 const JoinTeam = () => {
   return (
     <>
-      <section className="pt-5 joinTeamCircle position-relative">
+      <section id="career" className="pt-5 joinTeamCircle position-relative">
         <Container className="joinTeamContainer pt-md-5 mt-xl-5 position-relative z-2">
           <h3
             className="text-center ff_inter fw-bold fs_8x5l clr_brownBlack lh_115 mx-auto pb-md-5 pt-sm-5"
@@ -12,7 +12,7 @@ const JoinTeam = () => {
           >
             Join the <span className="clr_red">eyona</span> team and find out
             where the
-            <span className="trueMagic"> true magic </span>
+            <span className="trueMagic ff_libre"> true magic </span>
             happens!
           </h3>
           <div style={{ maxWidth: "1071px" }} className="pt-sm-5 pt-4">

@@ -1,9 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Franklin:wght@900&family=Montserrat:wght@400;500;600;700;900&display=swap");
 .ff_inter {
   font-family: "Inter", sans-serif;
 }
 .ff_montserrat {
   font-family: "Montserrat", sans-serif;
+}
+.ff_libre {
+  font-family: "Libre Franklin", sans-serif;
 }
 *,
 ::after,
@@ -19,19 +22,19 @@
   --fs-md: 16px;
   --fs-lg: 16px;
   --fs-xl: 18px;
-  --fs-2x5l: 21px;
+  --fs-2x5l: 20px;
   --fs-3xl: 24px;
-  --fs-3x5l: 28px;
-  --fs-4xl: 30px;
-  --fs-5xl: 35px;
+  --fs-3x5l: 23px;
+  --fs-4xl: 24px;
+  --fs-5xl: 32px;
   --fs-5x5l: 27px;
   --fs-6x5l: 38px;
   --fs-7xl: 36px;
   --fs-7x5l: 40px;
-  --fs-8x5l: 43px;
-  --fs-15xl: 50px;
-  --fs-2xxl: 65px;
-  --fs-45xl: 200px;
+  --fs-8x5l: 40px;
+  --fs-15xl: 40px;
+  --fs-2xxl: 45px;
+  --fs-45xl: 150px;
   /* COLORS */
   --clr-brownBlack: #212024;
   --clr-red: #bf0404;
@@ -127,13 +130,22 @@ html {
 .maxW133 {
   max-width: 133px;
 }
-.Navul li {
+.Navul li a {
   color: var(--clr-white);
   font-size: var(--fs-7xl);
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
   line-height: 170%;
   cursor: pointer;
+  margin-bottom: 0;
+  transition: all 0.3s ease-out;
+}
+.Navul li a:hover {
+  color: var(--clr-red);
+}
+.address:hover,
+.policies ul li p:hover {
+  -webkit-text-stroke: 0.5px;
 }
 .lh_170 {
   line-height: 170%;
@@ -179,7 +191,7 @@ html {
 .navShow {
   transition: all 1s linear;
   clip-path: circle(75%);
-    pointer-events: all;
+  pointer-events: all;
 }
 .min_h_1500 {
   min-height: 1250px;
@@ -295,8 +307,8 @@ html {
   margin-right: -20px;
 }
 .expertiseImg {
-  width: 130px;
-  height: 130px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
   box-shadow: 0px 65px 26px rgba(33, 32, 36, 0.01),
     0px 37px 22px rgba(33, 32, 36, 0.05), 0px 16px 16px rgba(33, 32, 36, 0.09),
@@ -318,11 +330,11 @@ html {
 .expertiseImg:hover {
   background-color: var(--clr-red);
 }
-.w_103 {
-  max-width: 103px;
+.b2b {
+  max-width: 80px;
 }
-.w_135 {
-  max-width: 135px;
+.earthW {
+  max-width: 95px;
 }
 .w_115 {
   max-width: 115px;
@@ -345,7 +357,7 @@ html {
   border-radius: 25px;
 }
 .productData {
-  padding: 40px 20px 0 48px;
+  padding: 30px 20px 0 20px;
 }
 .letterN1 {
   letter-spacing: -1px;
@@ -387,8 +399,8 @@ html {
     0px 95px 95px rgba(239, 124, 8, 0.09), 0px 24px 52px rgba(239, 124, 8, 0.1),
     0px 0px 0px rgba(239, 124, 8, 0.1);
 }
-.mt_N80 {
-  margin-top: -80px;
+.mt_N72 {
+  margin-top: -72px;
 }
 .maxW508 {
   max-width: 508px;
@@ -399,7 +411,8 @@ html {
 }
 .bg_map {
   background-image: url(./assets/img/webp/earthMapdots.webp);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
 }
 .br_25 {
@@ -434,20 +447,21 @@ html {
     0px 50px 30px rgba(191, 4, 4, 0.1), 0px 22px 22px rgba(191, 4, 4, 0.17),
     0px 6px 12px rgba(191, 4, 4, 0.2), 0px 0px 0px rgba(191, 4, 4, 0.2);
 }
-.btnHover{
-  transition: all ease-in-out .3s;
+.btnHover {
+  transition: all ease-in-out 0.3s;
+  border: 1px solid var(--clr-red);
 }
-.btnHover:hover{
-  color: var(--clr-black);
-  -webkit-text-stroke: 1px;
+.btnHover:hover {
+  color: var(--clr-red);
+  background: var(--clr-white);
 }
-.in{
-  transition: all ease .3s;
+.in {
+  transition: all ease 0.5s;
   cursor: pointer;
 }
-.in:hover path{
+.in:hover path {
   fill: var(--clr-red);
-  filter: brightness(1.5);
+  fill-opacity: 100%;
 }
 .contactBg {
   -webkit-text-stroke: 1px #ffffff40;
@@ -581,51 +595,54 @@ html {
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
-.expertsCircle::before{
-  content: '';
+.expertsCircle::before {
+  content: "";
   position: absolute;
-width: 331px;
-height: 331px;
-border-radius: 50%;
-left: 0;
-top: 0;
-transform: translate(-80% , 80%);
-border: 1px solid rgba(0, 0, 0, 0.5);
+  width: 331px;
+  height: 331px;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  transform: translate(-80%, 80%);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.footerLogo {
+  max-width: 208px;
 }
 /* PRELOADER */
-.d_flex{
+.d_flex {
   display: flex;
 }
-.z_1000{
+.z_1000 {
   z-index: 1000;
 }
-.animationPreloader{
+.animationPreloader {
   overflow: hidden;
-  animation: preloader 1.5s ease 1;
+  animation: preloader 1.5s ease alternate 2;
 }
 @keyframes preloader {
-  0%{
+  0% {
     width: 0;
     opacity: 0;
   }
-    50%{
+  50% {
     width: 0;
     opacity: 0;
   }
-  100%{
-    width: 760px;
+  100% {
+    width: 50%;
     opacity: 1;
   }
 }
-.animationPreloader2{
-    animation: preloader1 1.5s ease 1;
+.animationPreloader2 {
+  animation: preloader1 1.5s ease alternate 2;
 }
 @keyframes preloader1 {
-  0%{
+  0% {
     width: 0;
   }
-  100%{
-    width: 1100px;
+  100% {
+    width: 75%;
   }
 }
 /* ANIMATIONS */
@@ -640,10 +657,10 @@ border: 1px solid rgba(0, 0, 0, 0.5);
 .overflow_hidden {
   overflow: hidden !important;
 }
-.porductCards{
-  transition: all .3s ease-in-out;
+.porductCards {
+  transition: all 0.3s ease-in-out;
 }
-.porductCards:hover{
+.porductCards:hover {
   transform: scaleY(1.03);
 }
 @media (min-width: 576px) {
@@ -656,16 +673,19 @@ border: 1px solid rgba(0, 0, 0, 0.5);
     --fs-3xl: 30px;
     --fs-3x5l: 35px;
     --fs-4xl: 40px;
-    --fs-5xl: 50px;
+    --fs-5xl: 40px;
     --fs-5x5l: 35px;
     --fs-6x5l: 65px;
     --fs-7xl: 60px;
     --fs-7x5l: 75px;
     --fs-8x5l: 60px;
     --fs-15xl: 52px;
-    --fs-2xxl: 80px;
-    --fs-45xl: 350px;
+    --fs-2xxl: 70px;
+    --fs-45xl: 250px;
   }
+     .footerLogo{
+  max-width: 240px;
+}
   .mt_N172 {
     margin-top: -172px;
   }
@@ -680,8 +700,8 @@ border: 1px solid rgba(0, 0, 0, 0.5);
     margin-top: -140px;
   }
   .productData {
-  padding: 93px 48px 0 48px;
-}
+    padding: 93px 48px 0 48px;
+  }
 }
 @media (min-width: 768px) {
   :root {
@@ -694,14 +714,18 @@ border: 1px solid rgba(0, 0, 0, 0.5);
     --fs-3x5l: 35px;
     --fs-4xl: 40px;
     --fs-5xl: 50px;
-    --fs-5x5l: 40px;
+    --fs-5x5l: 35px;
     --fs-6x5l: 65px;
     --fs-7xl: 45px;
     --fs-7x5l: 75px;
-    --fs-8x5l: 85px;
+    --fs-8x5l: 60px;
     --fs-15xl: 70px;
-    --fs-2xxl: 120px;
-    --fs-45xl: 300px;
+    --fs-2xxl: 90px;
+    --fs-45xl: 250px;
+  }
+  .px_22 {
+    padding-left: 22px !important;
+    padding-right: 22px !important;
   }
   .contactBg {
     transform: translate(0, -50%);
@@ -711,8 +735,8 @@ border: 1px solid rgba(0, 0, 0, 0.5);
     width: 100% !important;
   }
   .expertiseImg {
-    width: 197px;
-    height: 197px;
+    width: 150px;
+    height: 150px;
   }
 }
 @media (min-width: 992px) {
@@ -725,15 +749,18 @@ border: 1px solid rgba(0, 0, 0, 0.5);
     --fs-3xl: 30px;
     --fs-3x5l: 35px;
     --fs-4xl: 40px;
-    --fs-5xl: 50px;
-    --fs-5x5l: 45px;
+    --fs-5xl: 40px;
+    --fs-5x5l: 41px;
     --fs-6x5l: 65px;
     --fs-7xl: 55px;
     --fs-7x5l: 75px;
-    --fs-8x5l: 85px;
+    --fs-8x5l: 70px;
     --fs-15xl: 90px;
-    --fs-2xxl: 150px;
-    --fs-45xl: 350px;
+    --fs-2xxl: 110px;
+    --fs-45xl: 300px;
+  }
+  .footerLogo {
+    max-width: 274px;
   }
   .mt_N90 {
     margin-top: -90px;
@@ -758,15 +785,15 @@ border: 1px solid rgba(0, 0, 0, 0.5);
     --fs-3xl: 30px;
     --fs-3x5l: 35px;
     --fs-4xl: 40px;
-    --fs-5xl: 50px;
-    --fs-5x5l: 55px;
+    --fs-5xl: 40px;
+    --fs-5x5l: 41px;
     --fs-6x5l: 64px;
     --fs-7xl: 55px;
     --fs-7x5l: 75px;
-    --fs-8x5l: 85px;
+    --fs-8x5l: 75px;
     --fs-15xl: 110px;
-    --fs-2xxl: 170px;
-    --fs-45xl: 450px;
+    --fs-2xxl: 140px;
+    --fs-45xl: 300px;
   }
   .min_vh_xl_100 {
     min-height: 100vh;
@@ -809,6 +836,9 @@ border: 1px solid rgba(0, 0, 0, 0.5);
   .mt_N190 {
     margin-top: -190px;
   }
+  .footerLogo {
+    max-width: 324px;
+  }
   :root {
     --fs-sm: 15px;
     --fs-md: 16px;
@@ -827,5 +857,17 @@ border: 1px solid rgba(0, 0, 0, 0.5);
     --fs-15xl: 150px;
     --fs-2xxl: 200px;
     --fs-45xl: 450px;
+  }
+}
+@media (min-width: 1600px) {
+  .b2b {
+    max-width: 103px;
+  }
+  .earthW {
+    max-width: 135px;
+  }
+  .expertiseImg {
+    width: 197px;
+    height: 197px;
   }
 }
